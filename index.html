@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Informasi Wisata Indonesia - Jelajahi Nusantara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header: Judul Website -->
+    <header>
+        <h1>Wisata Indonesia</h1>
+        <h2>Jelajahi Keindahan Alam, Budaya, dan Destinasi Unggulan Nusantara</h2>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#" class="nav-link active" onclick="openPage('home-page', this)">Home</a>
+        <a href="#" class="nav-link" onclick="openPage('destinasi-page', this)">Destinasi</a>
+        <a href="#" class="nav-link" onclick="openPage('galeri-page', this)">Galeri</a>
+        <a href="#" class="nav-link" onclick="openPage('contact-page', this)">Contact</a>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="container">
+        
+        <!-- 1. HALAMAN HOME (Sidebar & Peta Hanya Ada Di Home) -->
+        <section id="home-page" class="page-content active-page">
+            <div class="home-layout">
+                <!-- Konten Kiri Home -->
+                <div class="home-main">
+                    <h2>Pesona Wisata Nusantara</h2>
+                    <p style="text-align: justify;">
+                        <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=600&q=80" 
+                             alt="Keindahan Wisata Indonesia" class="img-content">
+                        Selamat datang di portal Informasi Wisata Indonesia. Negara kepulauan terbesar di dunia ini menyimpan sejuta kekayaan alam dan budaya. Dari Sabang sampai Merauke, Indonesia menawarkan berbagai macam destinasi wisata unggulan, mulai dari pantai berpasir putih, keindahan bawah laut, hingga warisan sejarah yang mendunia.
+                    </p>
+
+                    <div style="clear: both;"></div>
+
+                    <h3>Video Pesona Wisata Indonesia</h3>
+                    <iframe 
+                        width="100%" 
+                        height="315" 
+                        src="https://www.youtube-nocookie.com/embed/a3ICNMQW7Ok" 
+                        title="YouTube video player" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        referrerpolicy="strict-origin-when-cross-origin" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+
+                <!-- Konten Kanan Home (Sidebar Peta) -->
+                <aside class="sidebar">
+                    <h3>Informasi Lokasi & Peta</h3>
+                    <p><strong>Wilayah:</strong> Republik Indonesia</p>
+                    <p>Mencakup pulau-pulau eksotis di sepanjang garis khatulistiwa.</p>
+                    
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15959223.368307004!2d101.44740316250002!3d-2.4833826000000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e42c080e07c2493%3A0x8801311f7a07a16d!2sIndonesia!5e0!3m2!1sid!2sid!4v1710000000000!5m2!1sid!2sid" 
+                        width="100%" 
+                        height="300" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </aside>
+            </div>
+        </section>
+
+        <!-- 2. HALAMAN DESTINASI (Full Width) -->
+        <section id="destinasi-page" class="page-content">
+            <h2>Destinasi Wisata Populer & Tren</h2>
+            <p>Berikut beberapa tempat tujuan wisata utama di Indonesia yang sedang banyak dikunjungi wisatawan:</p>
+            
+            <div class="destination-grid">
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=400&q=80" alt="Danau Toba">
+                    <h4>Danau Toba</h4>
+                    <p>Danau vulkanik terbesar di dunia yang terletak di Sumatera Utara dengan pulau Samosir yang megah di tengahnya.</p>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=400&q=80" alt="Sumba">
+                    <h4>Sumba</h4>
+                    <p>Pulau di NTT yang terkenal dengan perbukitan sabana eksotis, air terjun tersembunyi, serta budaya adat kental.</p>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=400&q=80" alt="Raja Ampat">
+                    <h4>Raja Ampat</h4>
+                    <p>Surga bawah laut di Papua Barat dengan pulau-pulau karang indah dan kekayaan hayati teratas dunia.</p>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1596402184320-417e7178b2cd?auto=format&fit=crop&w=400&q=80" alt="Ancol">
+                    <h4>Ancol</h4>
+                    <p>Kawasan tempat wisata pantai dan taman hiburan terpadu yang berada di pesisir utara Jakarta.</p>
+                </div>
+                <div class="dest-card">
+                    <img src="https://images.unsplash.com/photo-1590523741831-ab7e8b8f9c7f?auto=format&fit=crop&w=400&q=80" alt="Bukittinggi">
+                    <h4>Bukittinggi</h4>
+                    <p>Kota di Sumatera Barat yang terkenal dengan Jam Gadang, kuliner khas, dan pemandangan Ngarai Sianok.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. HALAMAN GALERI (Full Width) -->
+        <section id="galeri-page" class="page-content">
+            <h2>Galeri Foto Wisata</h2>
+            <p>Dokumentasi keindahan sudut-sudut destinasi terbaik di seluruh wilayah Nusantara:</p>
+            
+            <div class="gallery-grid">
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&q=80" alt="Bali">
+                <img src="https://images.unsplash.com/photo-1588668214407-6ea9a6d8c272?auto=format&fit=crop&w=400&q=80" alt="Bromo">
+                <img src="https://images.unsplash.com/photo-1602154663343-89fe0bf541e7?auto=format&fit=crop&w=400&q=80" alt="Borobudur">
+                <img src="https://images.unsplash.com/photo-1518509562904-e7ef99cdcc86?auto=format&fit=crop&w=400&q=80" alt="Danau Toba">
+                <img src="https://images.unsplash.com/photo-1544644181-1484b3fdfc62?auto=format&fit=crop&w=400&q=80" alt="Raja Ampat">
+                <img src="https://images.unsplash.com/photo-1589308078059-be1415eab4c3?auto=format&fit=crop&w=400&q=80" alt="Sumba">
+            </div>
+        </section>
+
+        <!-- 4. HALAMAN CONTACT (Full Width) -->
+        <section id="contact-page" class="page-content">
+            <h2>Contact Wonderful Indonesia</h2>
+            <p>Apabila kamu memiliki pertanyaan seputar informasi perjalanan dan pariwisata Indonesia, silakan hubungi kami:</p>
+            
+            <div class="contact-card">
+                <p><strong>Email Hotline:</strong> <a href="mailto:info@wonderfulindonesia.id">info@wonderfulindonesia.id</a></p>
+                <p><strong>Dukungan Wisata:</strong> <a href="mailto:contact@indonesia.travel">contact@indonesia.travel</a></p>
+                <p><strong>Layanan Bebas Pulsa:</strong> 1500-111</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Informasi Wisata Indonesia.</p>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        function openPage(pageId, element) {
+            const pages = document.querySelectorAll('.page-content');
+            pages.forEach(page => page.classList.remove('active-page'));
+
+            document.getElementById(pageId).classList.add('active-page');
+
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => link.classList.remove('active'));
+            element.classList.add('active');
+        }
+    </script>
+
+</body>
+</html>
